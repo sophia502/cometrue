@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>list</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #app{
+            margin: 100px auto;
+            width: 500px;
+        }
+        h1{
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        #box{
+            margin: 15px 0;
+        }
+        li{
+            list-style: none;
+            font-size:30px;
+            margin-bottom: 10px;
+            background: #cccccc;
+            cursor: pointer;
+            height: 40px;
+        }
+        .del{
+            margin-right: 10px;
+            font-size: 20px;
+        }
+        /* .left{
+            float: left;
+        } */
+        .right{
+            float: right;
+            margin: 0 40px;
+        }
+        #box .red{
+            background: rgb(250, 2, 2);
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <h1>my list</h1>
+        <hr>
+        <!-- hr 一条横线 -->
+        <label>名称：<input type="text" placeholder="请输入产品名称" v-model="name"></label>
+        <label>价格：<input type="text" placeholder="0" v-model="number"></label>
+        <button @click="add">增加</button>
+        <input type="text" placeholder="输入搜索关键字" v-model="keyword">
+        <button @click="search">查询</button>
+        <!-- <button @click="back">撤销返回</button> -->
+        <ul id="box">
+            <li  v-for="(list,index) in lists"  @click="select(list)"  :class="{red:list.isRed}">
+                <input type="checkbox" :value="index" @click.stop="" v-model="checked">
+                <span class="del" @click.stop="del(index)">[X]</span>                
+                <span class="left" v-text="list.name"></span>
+                <span class="right" v-text="list.price"></span>
+                
+            </li>
+        </ul>
+        <div>
+            <button @click="deleteAll">删除选择</button> 总价：{{total()}}
+        </div>
+    </div>
+
+    <script src="vue.js"></script>
+    <script>
+        var vue = new Vue({
+            el:'#app',
+            data:{
+                lists:[
+                    {
+                        name:'ipd',
+                        price:2000,
+                        isRed:false
+                    },
+                    {
+                        name:'iphone7',
+                        price:4200,
+                        isRed:false
+                    },
+                    {
+                        name:'iphone8',
+                        price:5000,
+                        isRed:false
+                    },
+                    {
+                        name:'华为',
+                        price:3500,
+                        isRed:false
+                    },
+                    {
+                        name:'小米',
+                        price:3000,
+                        isRed:false
+                    }
+                ],
+                name:'',
+                number:'',
+                keyword:'',
+                checked:[]
+            },
+            methods:{
+                select(list){
+                    list.isRed = !list.isRed;
+                },
+                total(){
+                    let total = 0;
+                    this.lists.forEach(function(val) {
+                        if(this.isRed == true){
+                        total += parseInt(val.price);
+                    }
+                    });
+                    return total;
+                },
+                add(){
+                    if(this.name != ""&&this.number != ''){
+                        this.lists.push({
+                        name: this.name,
+                        price: this.number,
+                        isRed: false
+                    })
+                    }
+                    this.name = "";
+                    this.number = "";
+                },
+                search(){
+                    var word = this.lists.filter((val,idx)=>{
+                        if(val.name.includes(this.keyword)){
+                            return val;
+                        }
+                    });
+                    this.lists = word;
+                },
+                del(index){
+                    this.lists.splice(index,1);
+                },
+                deleteAll(){
+                    let arr = this.lists.filter((val,idx)=>{
+                        if(!this.checked.includes(idx)){
+                            return val;
+                        }
+                    });
+                    this.lists = arr;
+                    this.checked = [];
+                }
+            }
+        });
+    </script>
+</body>
+</html>
