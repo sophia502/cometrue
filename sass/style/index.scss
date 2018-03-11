@@ -1,0 +1,80 @@
+$color:#f00;
+#div1{
+  background:$color;
+}
+.aa{
+  .bb{
+   font-size: 20px;
+    &-text{
+      cursor: pointer;
+    }
+  }
+  &:hover{
+    color: $color;
+  }
+}
+#div2{
+  border:{
+    bottom:{
+      color:$color;
+    }
+    top:{
+      width: 10px;
+    }
+  }
+}
+//特殊变量
+$w:width;
+$c:color;
+.c{
+  #{$w}:10px;
+  #{$c}:#000;
+}
+//mixin
+@mixin xx($mg:5px,$bg:#00f){
+  width:100px;
+  color: #0f0;
+  margin:$mg;
+  background: $bg;
+}
+#div3{
+  @include xx(10px);
+}
+.d{
+  @include xx;
+}
+.e{
+  @include xx($bg:#000,$mg:2px);
+}
+$a:#f00;
+@mixin aa($bb:$a){
+color: $bb;
+}
+.ac{
+  @include aa();
+}
+//extend
+.dd{
+  color: #0f0;
+  .da{
+    text-align: center;
+  }
+}
+.ad{
+  @extend .dd;
+}
+//import 引入其他scss文件
+@import 'index2';
+//number
+.ab{
+  margin: 10 + 10px;
+  padding: 10 - 5px;
+  width: 10 * 2px;
+  border: (10px/5);
+}
+//$icons: error waring success;
+//@each $i in $icons {
+//  .icon-#{$i} {
+//    background-image: url('img/'+ $i+ '.jpg');
+//  }
+//}
