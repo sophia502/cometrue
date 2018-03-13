@@ -1,0 +1,17 @@
+#div2{
+    width: 200px;
+    height: 200px;
+    /* background: #0f0; */
+    background-image: url(../image/ab3.jpg);
+}
+#div3{
+    width: 300px;
+    height: 300px;
+}
+#div5{
+    display: flex;
+    transform: rotate(30deg);
+}
+.qq{
+    background: #cccccc;
+}

@@ -1,0 +1,30 @@
+/*! 沫沫@(,,´•ω•)ノ"(´っω•｀。) */
+#div2 {
+  width: 200px;
+  height: 200px;
+  /* background: #0f0; */
+  background-image: url(../image/264018f504d5acd684bf6fa56bf324d5.jpg);
+}
+
+#div3 {
+  width: 300px;
+  height: 300px;
+}
+
+#div5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+
+#div5 {
+  width: 200px;
+  height: 200px;
+  background: #00a2ff;
+}
+
+#div20 {
+  background: #000000;
+}
