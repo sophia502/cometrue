@@ -1,0 +1,58 @@
+/*轮播图开始*/
+.slide-box{
+    position: relative;
+    height: 460px;
+}
+.img-box img{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.icon-back,.icon-more{
+    height: 70px;
+    width: 40px;
+    line-height: 70px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    margin-top: -35px;
+    color: #cccccc;
+    font-size: 40px;
+    cursor: pointer;
+}
+.icon-back{
+    left: 234px;
+}
+.icon-more{
+    right: 10px;
+}
+.icon-back:hover,.icon-more:hover{
+    background: rgba(0,0,0,0.5);
+    color: #757575;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+.btns{
+    width: 150px;
+    position: absolute;
+    bottom: 30px;
+    right: 0;
+}
+.btns li{
+    width: 6px;
+    height: 6px;
+    background: #232429;
+    border: 2px solid #65666b;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    float: left;
+    margin: 0 8px;
+    cursor: pointer;
+}
+.btns li:hover{
+    background: #898a8e;
+    border: 2px solid #4f4e56;
+}
+/*轮播图结束*/
