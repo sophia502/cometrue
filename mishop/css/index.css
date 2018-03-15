@@ -1,3 +1,6 @@
+body{
+    height: 20000px;
+}
 /*轮播图开始*/
 .slide-box{
     position: relative;
@@ -8,7 +11,7 @@
     top: 0;
     left: 0;
 }
-.icon-back,.icon-more{
+.icon-big1,.icon-big2{
     height: 70px;
     width: 40px;
     line-height: 70px;
@@ -20,13 +23,13 @@
     font-size: 40px;
     cursor: pointer;
 }
-.icon-back{
+.icon-big1{
     left: 234px;
 }
-.icon-more{
+.icon-big2{
     right: 10px;
 }
-.icon-back:hover,.icon-more:hover{
+.icon-big1:hover,.icon-big2:hover{
     background: rgba(0,0,0,0.5);
     color: #757575;
     -webkit-border-radius: 4px;
@@ -55,4 +58,181 @@
     background: #898a8e;
     border: 2px solid #4f4e56;
 }
+.ml-list{
+    width: 234px;
+    background: rgba(0,0,0,0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 0;
+    z-index: 1;
+}
+.list-item>a{
+    display: block;
+    width: 204px;
+    height: 42px;
+    color: #fff;
+    padding-left: 30px;
+    line-height: 42px;
+    font-size: 14px;
+}
+.icon-small{
+    float: right;
+    font-size: 16px;
+    padding-right: 20px;
+    color: rgba(255,255,255,0.5);
+    font-weight: 900;
+}
+.list-item>a:hover{
+    background: #ff6700;
+}
+.list-item:hover .list-box{
+    display: block;
+
+}
+.list-box{
+    display: none;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 234px;
+    background: #fff;
+    height: 100%;
+    border-top: 1px solid #e0e0e0;
+    -webkit-box-shadow:  0 8px 8px rgba(0,0,0,0.18);
+    -moz-box-shadow: 0 8px 8px rgba(0,0,0,0.18);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.18);
+}
+.sub-3{
+    width: 795px;
+}
+.list-box ul{
+    width: 265px;
+    float: left;
+}
+.list-box-li{
+    padding: 18px 20px;
+    overflow: hidden;
+}
+.list-box-a{
+    font-size: 14px;
+    float:left;
+    color: #333;
+    width: 166px;
+    height: 40px;
+}
+.list-img+span{
+    margin-left: 5px;
+}
+.list-img{
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+}
+
+.list-box-a:hover{
+    color: #ff6700;
+}
+.list-select{
+    float:right;
+    color: #ff6700;
+    border: 1px solid #ff6700;
+    width: 55px;
+    height: 22px;
+    font-size: 13px;
+    line-height: 22px;
+    text-align: center;
+    margin-top: 10px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+.list-select:hover{
+    color: #fff;
+    background: #ff6700;
+}
 /*轮播图结束*/
+/*home-sub 开始*/
+.home-sub{
+    margin-top: 15px;
+    height: 170px;
+}
+.home-left{
+    width: 234px;
+    height: 170px;
+    background: #5f5750;
+    float: left;
+}
+.home-left ul{
+    padding: 3px;
+}
+.home-left li{
+    width: 76px;
+    height: 82px;
+    float: left;
+    position: relative;
+}
+.home-left li a{
+    display: block;
+    width: 70px;
+    height: 60px;
+    padding-top: 18px;
+}
+.home-left i{
+    color: rgba(255,255,255,0.7);
+    display: block;
+    text-align: center;
+    height: 24px;
+    margin-bottom: 10px;
+    font-size: 28px;
+    line-height: 24px;
+}
+.home-left span{
+    font-size: 12px;
+    color: rgba(255,255,255,0.7);
+    display: block;
+    text-align: center;
+}
+.s-right::after{
+    content: '';
+    width: 1px;
+    height: 60px;
+    background: #665e57;
+    position: absolute;
+    top: 12px;
+    right: 0;
+}
+.s-bottom::before{
+    content: '';
+    height: 1px;
+    width: 60px;
+    background: #665e57;
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+}
+.home-left li:hover i,.home-left li:hover span{
+    color: rgba(255,255,255,1);
+}
+.home-right{
+    float: right;
+}
+.home-right img{
+    width: 317px;
+    height: 170px;
+    float: left;
+    margin-left: 13px;
+    box-shadow: none;
+}
+
+.home-right img:hover{
+    -webkit-animation: box 0.5s ease-out forwards;
+    -o-animation: box 0.5s ease-out forwards;
+    animation: box 0.5s ease-out forwards;
+}
+@keyframes box {
+    100%{
+        box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+}
+/*home-sub 结束*/
