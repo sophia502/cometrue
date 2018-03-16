@@ -1,5 +1,5 @@
 body{
-    height: 20000px;
+    height: 2000px;
 }
 /*轮播图开始*/
 .slide-box{
@@ -156,6 +156,7 @@ body{
 .home-sub{
     margin-top: 15px;
     height: 170px;
+    margin-bottom: 26px;
 }
 .home-left{
     width: 234px;
@@ -217,22 +218,237 @@ body{
 .home-right{
     float: right;
 }
+.home-right a{
+    float: left;
+    width: 317px;
+    height: 170px;
+    margin-left: 13px;
+}
 .home-right img{
     width: 317px;
     height: 170px;
-    float: left;
-    margin-left: 13px;
     box-shadow: none;
 }
-
 .home-right img:hover{
-    -webkit-animation: box 0.5s ease-out forwards;
-    -o-animation: box 0.5s ease-out forwards;
-    animation: box 0.5s ease-out forwards;
+    -webkit-animation: box 0.3s ease-out forwards;
+    -o-animation: box 0.3s ease-out forwards;
+    animation: box 0.3s ease-out forwards;
 }
 @keyframes box {
     100%{
-        box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        box-shadow: 0 10px 40px 1px rgba(0,0,0,0.15);
     }
 }
 /*home-sub 结束*/
+/*小米闪购开始*/
+.shop-up{
+    height: 58px;
+}
+.shop-up h2{
+    font-size: 22px;
+    font-weight: 300;
+    float: left;
+    line-height: 58px;
+    color: #333333;
+}
+.shop-up div{
+    float: right;
+    margin-top: 20px;
+}
+.shop-up span{
+    display: block;
+    float: left;
+    width: 24px;
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+    padding: 3px 5px;
+    font-weight: 700;
+    border: 1px solid #e0e0e0;
+    color: #e0e0e0;
+}
+.shop-up .span-l{
+    border-right: none;
+}
+#select-span{
+    color: #b0b0b0;
+}
+#select-span:hover{
+    color: #ff6700;
+    cursor: pointer;
+}
+.shop-down{
+    overflow: hidden;
+    height: 340px;
+}
+.shop-down ul{
+    width: 2976px;
+}
+.shop-down li{
+    width: 234px;
+    background: rgba(0,0,0,0.02);
+    height: 340px;
+    margin-right: 15px;
+    float: left;
+}
+.shop-pop{
+    display: block;
+    margin-top: 40px;
+    text-align: center;
+}
+.shop-img{
+    width: 160px;
+    height: 160px;
+}
+.shop-name{
+    display: block;
+    margin-top: 25px;
+    color: #212121;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.shop-p{
+    font-size: 12px;
+    margin-bottom: 12px;
+    color: #b0b0b0;
+    text-align: center;
+}
+.shop-p3{
+    font-size: 14px;
+    color: #ff6700;
+    text-align: center;
+}
+.shop-p3 del{
+    color: #b0b0b0;
+}
+.t-red{
+    border-top: 1px solid #e53935;
+}
+.t-yellow{
+    border-top: 1px solid #ffac13;
+}
+.t-green{
+    border-top: 1px solid #83c44e;
+}
+.t-blue{
+    border-top: 1px solid #2196f3;
+}
+.t-deep-green{
+    border-top: 1px solid #00c0a5;
+}
+/*小米闪购结束*/
+/*广告条开始*/
+.banner-box{
+    margin-bottom: 42px;
+    margin-top: 42px;
+}
+.banner-box img{
+    width: 1226px;
+    height: 120px;
+}
+/*广告条结束*/
+/*售卖商品开始*/
+.page-main{
+    padding-top: 60px;
+    background: #f5f5f5;
+}
+/*part1*/
+.p-top{
+    height: 58px;
+}
+.p-top h2{
+    font-size: 22px;
+    font-weight: 200;
+    line-height: 58px;
+    color: #333;
+    float: left;
+}
+.p-top div{
+    float: right;
+}
+.p-top a{
+    font-size: 16px;
+    line-height: 58px;
+    color: #424242;
+}
+.p-top a i{
+    width: 12px;
+    height: 12px;
+    padding: 4px;
+    margin-left: 8px;
+    border-radius: 16px;
+    font-size: 12px;
+    line-height: 12px;
+    background: #b0b0b0;
+    color: #fff;
+    vertical-align: 1px;
+    font-weight: 900;
+}
+
+.p-bottom{
+    height: 628px;
+}
+.p-left a{
+    float: left;
+    height: 614px;
+}
+.p-left img{
+    width: 234px;
+    height: 614px;
+}
+.p-right ul{
+    float: right;
+    width: 992px;
+}
+.p-right li{
+    margin-left: 14px;
+    margin-bottom: 14px;
+    padding: 20px 0;
+    width: 234px;
+    height: 260px;
+    float: left;
+    background: #ffffff;
+    box-shadow: none;
+    position: relative;
+}
+.p-right span{
+    width: 64px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -32px;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    color: #fff;
+    background: #e53935;
+    z-index: 1;
+}
+.shop-low{
+    display: none;
+}
+.p-right li .p-a1{
+    margin-top: 0;
+}
+.p-right li .p-a2{
+    margin-top: 20px;
+}
+.p-right li:hover,.p-left a:hover{
+    -webkit-animation: box 0.3s ease-out forwards;
+    -o-animation: box 0.3s ease-out forwards;
+    animation: box 0.3s ease-out forwards;
+}
+/*part2*/
+.intel-t-a{
+    font-size: 16px;
+    margin-left: 30px;
+}
+.intel-t-a:hover{
+    color: #ff6700;
+    border-bottom: 2px solid #ff6700;
+}
+/*售卖商品结束*/
+
