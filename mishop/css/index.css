@@ -748,5 +748,103 @@ body{
 /*内容结束*/
 
 /*底部开始*/
+.footer-service{
+    padding: 27px 0;
+    height: 25px;
+    border-bottom: 1px solid #e0e0e0;
+}
+.list-service li{
+    float: left;
+    width: 19.8%;
+    height: 25px;
+    border-left: 1px solid #e0e0e0;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+}
+.list-service .bor-none{
+    border-left: none;
+}
+.list-service a {
+    color: #616161;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+}
+.list-service .iconfont {
+    margin-right: 6px;
+    font-size: 24px;
+    line-height: 24px;
+    vertical-align: -4px;
+}
+.list-service .day{
+    vertical-align: -2.5px;
+   }
+.list-service .after-sale{
+    font-size: 32px;
+    vertical-align: -6px;
+}
 
+.footer-links {
+    padding: 40px 0;
+}
+.footer-links .col-links {
+    float: left;
+    width: 160px;
+    height: 112px;
+}
+.footer-links .col-links dt {
+    margin: -1px 0 26px;
+    font-size: 14px;
+    line-height: 1.25;
+    color: #424242;
+}
+.footer-links .col-links dd {
+    margin: 10px 0 0;
+    font-size: 12px;
+}
+.footer-links .col-links a {
+    color: #757575;
+}
+
+.footer-links .col-contact {
+    float: right;
+    width: 251px;
+    height: 112px;
+    border-left: 1px solid #e0e0e0;
+    text-align: center;
+    color: #616161;
+}
+.footer-links .col-contact .phone {
+    margin: 0 0 5px;
+    font-size: 22px;
+    line-height: 1;
+    color: #ff6700;
+}
+.footer-links .col-contact p {
+    margin: 0 0 16px;
+    font-size: 12px;
+}
+.btn-line-primary {
+    border-color: #ff6700;
+    background: #fff;
+    color: #ff6700;
+}
+.btn-small {
+    width: 118px;
+    height: 28px;
+    font-size: 12px;
+    line-height: 28px;
+}
+.btn {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #b0b0b0;
+    text-align: center;
+    cursor: pointer;
+}
+.icon-zaixiankefu{
+    vertical-align: -2px;
+}
 /*底部结束*/
