@@ -1,5 +1,5 @@
 body{
-    height: 2000px;
+    height: 10000px;
 }
 /*轮播图开始*/
 .slide-box{
@@ -121,10 +121,10 @@ body{
     width: 166px;
     height: 40px;
 }
-.list-img+span{
+.list-box-img+span{
     margin-left: 5px;
 }
-.list-img{
+.list-box-img{
     width: 40px;
     height: 40px;
     vertical-align: middle;
@@ -392,6 +392,7 @@ body{
 }
 .p-left a{
     float: left;
+    width: 234px;
     height: 614px;
 }
 .p-left img{
@@ -413,7 +414,7 @@ body{
     box-shadow: none;
     position: relative;
 }
-.p-right span{
+.shop-low{
     width: 64px;
     height: 20px;
     position: absolute;
@@ -425,10 +426,6 @@ body{
     text-align: center;
     color: #fff;
     background: #e53935;
-    z-index: 1;
-}
-.shop-low{
-    display: none;
 }
 .p-right li .p-a1{
     margin-top: 0;
@@ -436,7 +433,7 @@ body{
 .p-right li .p-a2{
     margin-top: 20px;
 }
-.p-right li:hover,.p-left a:hover{
+.p-right li:hover,.p-left img:hover{
     -webkit-animation: box 0.3s ease-out forwards;
     -o-animation: box 0.3s ease-out forwards;
     animation: box 0.3s ease-out forwards;
@@ -450,5 +447,187 @@ body{
     color: #ff6700;
     border-bottom: 2px solid #ff6700;
 }
+.p-left .intel-a-img{
+    width: 234px;
+    height: 300px;
+    margin-bottom: 14px;
+}
+.p-left .intel-a-img:hover,.list-right .list:hover{
+    -webkit-animation: box 0.3s ease-out forwards;
+    -o-animation: box 0.3s ease-out forwards;
+    animation: box 0.3s ease-out forwards;
+}
+
+.p-right .intel-span{
+    background: #83c44e;
+}
+.brick-item-active{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    /*z-index: 3;*/
+    width: 234px;
+    height: 0px;
+    overflow: hidden;
+    font-size: 12px;
+    background: #ff6700;
+    /*opacity: 0;*/
+}
+.brick-item-active a{
+    display: block;
+    padding: 8px 30px;
+}
+.brick-item-active span{
+    font-size: 12px;
+    color: #fff;
+    margin-bottom: 5px;
+    display: block;
+}
+.p-right li:hover .brick-item-active{
+    -webkit-animation: appear 0.3s ease forwards ;
+    -o-animation: appear 0.3s ease forwards ;
+    animation: appear 0.3s ease forwards ;
+}
+@keyframes appear {
+    100%{
+        height: 75px;
+    }
+}
+.p-right{
+    position: relative;
+    height: 628px;
+    float: right;
+}
+.list-right{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 234px;
+    height: 300px;
+    margin: 0 0 14px 4px;
+}
+.list{
+    height: 143px;
+    margin-bottom: 14px;
+    background: #fff;
+    overflow: hidden;
+}
+.list-a1{
+    float: left;
+    margin: 49px 0 0 30px;
+}
+.list-a1 h5{
+    color: #333;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+.list-a1 span{
+    font-size: 14px;
+    color: #ff6700;
+}
+.list-a2{
+    margin: 49px 110px 0 30px;
+    font-size: 18px;
+    color: #333;
+    width: 94px;
+    height: 45px;
+    display: block;
+}
+.list-a2 small{
+    display: block;
+    font-size: 12px;
+    color: #757575;
+    margin-top: 3px;
+}
+.list-a1-img{
+    width: 80px;
+    height: 80px;
+    float: right;
+    margin: 30px 20px 0 0;
+}
+.list2{
+    position: relative;
+}
+.arrow{
+    position: absolute;
+    top: 43px;
+    right: 37px;
+    border: 3px solid #ff6700;
+    color: #ff6700;
+    font-size: 30px;
+    line-height: 30px;
+    padding: 8px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
 /*售卖商品结束*/
+/*热评产品开始*/
+.hot .p-bottom{
+    height: 429px;
+}
+.hot ul{
+    width: 1240px;
+    overflow: hidden;
+}
+.hot-li{
+    float: left;
+    width: 296px;
+    height: 415px;
+    margin: 0 14px 14px 0;
+    background: #fff;
+}
+.hot-li img{
+    width: 296px;
+    height: 220px;
+    margin-bottom: 28px;
+}
+.introduction{
+    width: 240px;
+    height: 72px;
+    display: block;
+    color: #333;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    margin: 0 28px 22px;
+}
+.hot-item{
+    margin: 0 28px 8px;
+    padding: 0 10px 0 0;
+    font-size: 12px;
+    color: #b0b0b0;
+}
+.hot-li div{
+    margin: 0 30px 0 30px;
+}
+.hot-title{
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    float: left;
+}
+.hot-line{
+    background: #e0e0e0;
+    margin: 3px 8px 0;
+    display: block;
+    float: left;
+    width: 0.12em;
+    height: 15px;
+}
+.hot-price{
+    color: #ff6700;
+    font-size: 14px;
+}
+.hot-li:hover{
+    -webkit-animation: box 0.3s ease-out forwards;
+    -o-animation: box 0.3s ease-out forwards;
+    animation: box 0.3s ease-out forwards;
+}
+/*热评产品结束*/
+/*内容开始*/
+
+/*内容结束*/
+
 
