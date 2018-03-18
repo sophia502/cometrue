@@ -411,6 +411,7 @@
     background: #ffffff;
     box-shadow: none;
     position: relative;
+    top:0;
 }
 .shop-low{
     width: 64px;
@@ -432,9 +433,9 @@
     margin-top: 20px;
 }
 .p-right li:hover,.p-left img:hover{
-    -webkit-animation: box 0.3s ease-out forwards;
-    -o-animation: box 0.3s ease-out forwards;
-    animation: box 0.3s ease-out forwards;
+    -webkit-animation: run 0.3s ease-out forwards;
+    -o-animation: run 0.3s ease-out forwards;
+    animation: run 0.3s ease-out forwards;
 }
 /*part2*/
 .intel-t-a{
@@ -451,11 +452,16 @@
     margin-bottom: 14px;
 }
 .p-left .intel-a-img:hover,.list-right .list:hover{
-    -webkit-animation: box 0.3s ease-out forwards;
-    -o-animation: box 0.3s ease-out forwards;
-    animation: box 0.3s ease-out forwards;
+    -webkit-animation: run 0.3s ease-out forwards;
+    -o-animation: run 0.3s ease-out forwards;
+    animation: run 0.3s ease-out forwards;
 }
-
+@keyframes run {
+    100%{
+        box-shadow: 0 10px 40px 1px rgba(0,0,0,0.15);
+        top: -2px;
+    }
+}
 .p-right .intel-span{
     background: #83c44e;
 }
@@ -509,6 +515,8 @@
     margin-bottom: 14px;
     background: #fff;
     overflow: hidden;
+    position: relative;
+    top: 0;
 }
 .list-a1{
     float: left;
@@ -574,6 +582,8 @@
     height: 415px;
     margin: 0 14px 14px 0;
     background: #fff;
+    position: relative;
+    top: 0;
 }
 .hot-li img{
     width: 296px;
@@ -618,9 +628,9 @@
     font-size: 14px;
 }
 .hot-li:hover{
-    -webkit-animation: box 0.3s ease-out forwards;
-    -o-animation: box 0.3s ease-out forwards;
-    animation: box 0.3s ease-out forwards;
+    -webkit-animation: run 0.3s ease-out forwards;
+    -o-animation: run 0.3s ease-out forwards;
+    animation: run 0.3s ease-out forwards;
 }
 /*热评产品结束*/
 /*内容开始*/
