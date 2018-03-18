@@ -438,6 +438,12 @@
     animation: run 0.3s ease-out forwards;
 }
 /*part2*/
+.intelligence .p-right>div{
+    display: none;
+}
+.intelligence .p-right .box-active{
+    display: block;
+}
 .intel-t-a{
     font-size: 16px;
     margin-left: 30px;
@@ -657,7 +663,18 @@
 .book-li{
     width: 296px;
     height: 340px;
+    float: left;
+}
+.contain-button{
     position: relative;
+}
+.hot .contain-list{
+    overflow: hidden;
+    margin: 0;
+}
+.book-ul{
+    width: 888px;
+    overflow: hidden;
 }
 .book-a1{
     color: #333;
@@ -730,7 +747,7 @@
 .book-l,.book-r{
     display: none;
     position: absolute;
-    top: 30%;
+    top: 45%;
     background-color: rgba(66,66,66,0.2);
     color: #fafafa;
     font-size: 18px;
