@@ -319,7 +319,186 @@ img{
 /*头部--结束*/
 
 
+/*底部开始*/
+.footer-service{
+    padding: 27px 0;
+    height: 25px;
+    border-bottom: 1px solid #e0e0e0;
+}
+.list-service li{
+    float: left;
+    width: 19.8%;
+    height: 25px;
+    border-left: 1px solid #e0e0e0;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+}
+.list-service .bor-none{
+    border-left: none;
+}
+.list-service a {
+    color: #616161;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+}
+.list-service .iconfont {
+    margin-right: 6px;
+    font-size: 24px;
+    line-height: 24px;
+    vertical-align: -4px;
+}
+.list-service .day{
+    vertical-align: -2.5px;
+}
+.list-service .after-sale{
+    font-size: 32px;
+    vertical-align: -6px;
+}
 
+.footer-links {
+    padding: 40px 0;
+    height: 112px;
+}
+.col-links {
+    float: left;
+    width: 160px;
+    height: 112px;
+    text-align: center;
+}
+.col-links dt {
+    margin: -1px 0 26px;
+    font-size: 14px;
+    line-height: 1.25;
+    color: #424242;
+}
+.col-links dd {
+    margin: 10px 0 0;
+    font-size: 12px;
+}
+.col-links a {
+    color: #757575;
+}
+
+.col-contact {
+    float: right;
+    width: 251px;
+    height: 112px;
+    border-left: 1px solid #e0e0e0;
+    text-align: center;
+    color: #616161;
+}
+.col-contact .phone {
+    margin: 0 0 5px;
+    font-size: 22px;
+    line-height: 1;
+    color: #ff6700;
+}
+.col-contact p {
+    margin: 0 0 16px;
+    font-size: 12px;
+}
+.btn {
+    display: inline-block;
+    width: 118px;
+    height: 28px;
+    font-size: 12px;
+    line-height: 28px;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ff6700;
+    text-align: center;
+    cursor: pointer;
+    background: #fff;
+    color: #ff6700;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+.icon-zaixiankefu{
+    vertical-align: -2px;
+}
+.site-info {
+    padding: 30px 0;
+    font-size: 12px;
+    background: #fafafa;
+}
+.container {
+    width: 1226px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.logo {
+    float: left;
+    width: 57px;
+    height: 57px;
+    margin-right: 10px;
+    background: url(../img/mi-logo.png) no-repeat 50% 50% #ff6700;
+}
+.info-text {
+    float: left;
+    color: #b0b0b0;
+}
+.info-text p {
+    margin: 0;
+    line-height: 18px;
+}
+.info-text .sites a {
+    color: #757575;
+}
+.sep{
+    margin: 0 .25em;
+    font-family: sans-serif;
+}
+.info-text {
+    float: left;
+    color: #b0b0b0;
+}
+.site-info {
+    padding: 30px 0;
+    font-size: 12px;
+    background: #fafafa;
+}
+.info-text a {
+    color: #b0b0b0;
+}
+.info-links {
+    float: right;
+    height: 28px;
+    margin: 4px 0 0;
+}
+.info-links img {
+    width: auto;
+    height: 28px;
+    margin-left: 0;
+}
+.slogan {
+    clear: both;
+    margin: 30px auto 0;
+    width: 267px;
+    height: 19px;
+    background: url(../img/slogan2016.png) no-repeat center 0;
+}
+.ir {
+    display: block;
+    text-align: left;
+    text-indent: -9999em;
+    overflow: hidden;
+}
+.list-service li:hover i,.list-service li:hover a{
+    color: #ff6700;
+}
+.col-links a:hover,.info-text a:hover,.sites a:hover{
+    color: #ff6700;
+}
+.btn:hover{
+    background-color: #f25807;
+    border-color: #f25807;
+    color: #fff;
+}
+
+/*底部结束*/
 
 
 
