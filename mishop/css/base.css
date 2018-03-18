@@ -14,6 +14,9 @@ img{
 }
 /*基础设置结束*/
 /*广告开始*/
+body{
+    min-width: 1226px;
+}
 .adv{
     height: 120px;
     background: url("../img/cms_1507906806588_Fxrqj (1).jpg") no-repeat 50% 50%;
@@ -34,7 +37,7 @@ img{
     height: 40px;
     background: #333;
 }
-#n-l,#n-r{
+.n-l,.n-r{
     margin: 0 5px;
 }
 .nav a{
@@ -59,16 +62,16 @@ img{
 .n-title,.line{
     float: left;
 }
-#n-r{
+.n-r{
     float: right;
     position: relative;
 }
-#car{
+.car{
     width: 100px;
     margin-left: 10px;
     background: #424242;
 }
-#car:hover{
+.car:hover{
     color: #ff6700;
     background: #ffffff;
 }
@@ -105,7 +108,7 @@ img{
 }
 /*nav--结束*/
 /*弹出层开始*/
-#mask{
+.mask{
     position: absolute;
     top: 0;
     left: 0;
