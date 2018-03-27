@@ -503,6 +503,17 @@ body{
 
 /*底部结束*/
 
-
-
+/*go-top start*/
+#go-top{
+    width: 35px;
+    height: 74px;
+    background: url("../img/go-top.jpeg") no-repeat -22px 0;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+#go-top:hover{
+    background: url("../img/go-top.jpeg") no-repeat -113px 0;
+}
+/*go-top end*/
 
