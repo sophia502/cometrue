@@ -17,15 +17,15 @@
     <div class="nav">
         <div class="wrapper">
             <div class="n-l">
-                <a href="" class="n-title"> 小米商城</a>
+                <a href="javascript:;" class="n-title"> 小米商城</a>
                 <span class="line"></span>
-                <a href="" class="n-title">MIUI</a>
+                <a href="#con" class="n-title">MIUI</a>
                 <span class="line"></span>
-                <a href="" class="n-title">IoT</a>
+                <a href="#shopping1" class="n-title">IoT</a>
                 <span class="line"></span>
-                <a href="" class="n-title">云服务</a>
+                <a href="#shopping2" class="n-title">云服务</a>
                 <span class="line"></span>
-                <a href="" class="n-title">水滴</a>
+                <a href="#foot" class="n-title">水滴</a>
                 <span class="line"></span>
                 <a href="" class="n-title">金融</a>
                 <span class="line"></span>
@@ -98,7 +98,7 @@
     </div>
     <!--弹出层end-->
     <!--头部开始-->
-    <div class="container">
+    <div class="container" id="con">
         <div class="wrapper">
             <div class="header-logo"><a href=""></a></div>
             <div class="header-logo2"><a href=""></a></div>
@@ -312,18 +312,18 @@
                 </li>
             </ul>
         </div>
-        <div class="slide">
+        <div class="slide" id="chart">
             <div class="img-box">
-                <a href=""><img src="img/xmad_15035620079519_UKADe.jpg" alt=""></a>
+                <a href=""><img src="img/xmad_15035620079519_UKADe.jpg" class="selected"></a>
                 <a href=""><img src="img/xmad_15057916296159_nUYKy.jpg" alt=""></a>
                 <a href=""><img src="img/xmad_15077096831138_QALce.jpg" alt=""></a>
                 <a href=""><img src="img/xmad_15077714738381_erTKQ.jpg" alt=""></a>
                 <a href=""><img src="img/xmad_15084688880977_tjRVO.jpg" alt=""></a>
             </div>
-            <i class="iconfont icon-back icon-big1"></i>
-            <i class="iconfont icon-more icon-big2"></i>
+            <i class="iconfont icon-back icon-big1" id="ib1"></i>
+            <i class="iconfont icon-more icon-big2" id="ib2"></i>
             <ul class="btns">
-                <li></li>
+                <li class="selected"></li>
                 <li></li>
                 <li></li>
                 <li></li>
@@ -352,7 +352,7 @@
     </div>
     <!--home-sub 结束-->
     <!--小米闪购开始-->
-    <div class="wrapper">
+    <div class="wrapper" id="shopping1">
         <div class="shop-up">
             <h2>小米闪购</h2>
             <div>
@@ -432,7 +432,7 @@
     </div>
     <!--广告条结束-->
     <!--售卖商品开始-->
-    <div class="page-main">
+    <div class="page-main" id="shopping2">
         <!--part1 start-->
         <div class="phone wrapper">
             <div class="p-top">
@@ -1295,7 +1295,7 @@
     </div>
     <!--售卖商品结束-->
     <!--底部开始-->
-    <div class="footer">
+    <div class="footer" id="foot">
         <div class="footer-service wrapper">
             <ul class="list-service clear-fix">
                 <li class="bor-none"><a href="#"><i class="iconfont icon-buoumaotubiao46"></i>预约维修服务</a></li>
@@ -1399,7 +1399,9 @@
     <a href="javascript:;" id="go-top"></a>
     <!--go-top end-->
     <script src="js/base.js"></script>
-    <script></script>
+    <script>
+
+    </script>
 
 </body>
 </html>

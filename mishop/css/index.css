@@ -1,9 +1,16 @@
 /*轮播图开始*/
+.slide{
+    height: 460px;
+}
 .slide-box{
     position: relative;
     height: 460px;
 }
+.img-box .selected{
+    display: block;
+}
 .img-box img{
+    display: none;
     position: absolute;
     top: 0;
     left: 0;
@@ -51,10 +58,11 @@
     margin: 0 8px;
     cursor: pointer;
 }
-.btns li:hover{
+.btns .selected{
     background: #898a8e;
     border: 2px solid #4f4e56;
 }
+
 .ml-list{
     width: 234px;
     background: rgba(0,0,0,0.6);
