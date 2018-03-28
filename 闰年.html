@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>闰年</title>
+</head>
+<body>
+<script>
+//页面输出
+    //闰年判断
+    var year = window.prompt('请输入年份');
+    year = year*1;
+    // var today = new Date();
+    // var year = today.getFullYear();
+    if (year%4==0&&year%100!=0){
+        document.write(year+"是闰年");
+    }else if(year%400==0){
+        document.write(year+"是闰年");
+    }else{
+        document.write(year+"不是闰年");
+    }
+//控制台输出
+    //arguments 可以取到全部数值；若有下标表示取到下标为几的数值。
+    aa(1,2,3);
+    function aa(a,b){
+        console.log(a,b);
+        console.log(arguments);
+        console.log(arguments[0]);
+        console.log(arguments[2]);
+    }
+    //比较两个随机数的大小
+    var x=Math.random();
+    console.log('1: '+x);
+    var y=Math.random();
+    console.log('2: '+y);
+    console.log('max: '+(x>y?x:y));
+</script>
+</body>
+</html>
