@@ -508,12 +508,16 @@ body{
     width: 35px;
     height: 74px;
     background: url("../img/go-top.jpeg") no-repeat -22px 0;
+    opacity: 0.5;
+    filter:alpha(opacity=50);
     position: fixed;
     bottom: 50px;
     right: 50px;
 }
 #go-top:hover{
     background: url("../img/go-top.jpeg") no-repeat -113px 0;
+    opacity: 0.8;
+    filter:alpha(opacity=80);
 }
 /*go-top end*/
 
