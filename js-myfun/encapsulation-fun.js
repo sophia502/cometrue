@@ -21,6 +21,17 @@
         }
         return oClass;
     }
-    getEleByClassName();
+
+//ele.firstChild
+    function next(elem) {
+        do{
+            elem = elem.nextSibling;
+        }while (elem && elem.nodeType != 1);
+        return elem;
+    }
+    function first(elem){
+        elem = elem.firstChild;
+        return elem.nodeType == 1? elem : next(elem);
+    }
 
 });
