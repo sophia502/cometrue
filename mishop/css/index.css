@@ -7,13 +7,15 @@
     height: 460px;
 }
 .img-box .selected{
-    display: block;
+    opacity: 1;
+    transition: all 0.6s ease-in-out;
 }
 .img-box img{
-    display: none;
+    opacity: 0;
     position: absolute;
     top: 0;
     left: 0;
+    transition: all 0.6s ease-in-out;
 }
 .icon-big1,.icon-big2{
     height: 70px;
@@ -271,23 +273,27 @@
     font-weight: 700;
     border: 1px solid #e0e0e0;
     color: #e0e0e0;
+    cursor: pointer;
 }
-.shop-up .span-l{
+#left{
     border-right: none;
 }
-#select-span{
+#row .select-span{
     color: #b0b0b0;
 }
-#select-span:hover{
+#row .select-span:hover{
     color: #ff6700;
-    cursor: pointer;
 }
 .shop-down{
     overflow: hidden;
     height: 340px;
+    position: relative;
 }
 .shop-down ul{
-    width: 2976px;
+    width: 1245px;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 .shop-down li{
     width: 234px;
@@ -667,6 +673,19 @@
 .h-blue{
     color: #2196f3;
 }
+.hot .contain-list{
+    overflow: hidden;
+    margin: 0;
+    height: 328px;
+    width: 296px;
+    position: relative;
+}
+.book-ul{
+     width: 888px;
+    position: absolute;
+    left: 0;
+    top: 0;
+ }
 .book-li{
     width: 296px;
     height: 340px;
@@ -674,14 +693,6 @@
 }
 .contain-button{
     position: relative;
-}
-.hot .contain-list{
-    overflow: hidden;
-    margin: 0;
-}
-.book-ul{
-    width: 888px;
-    overflow: hidden;
 }
 .book-a1{
     color: #333;
@@ -764,12 +775,17 @@
     height: 24px;
     padding: 12px 0;
     text-align: center;
+    transition: all 0.2s ease-out;
+    cursor: pointer;
 }
 .book-l{
     left: 0;
 }
 .book-r{
     right: 0;
+}
+.book-l:hover,.book-r:hover{
+    background-color: rgba(66,66,66,0.5);
 }
 .hot-li:hover .book-l,.hot-li:hover .book-r{
     display: block;
