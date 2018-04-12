@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>一片星空</title>
+    <style>
+        .play{
+            display: block;
+        }
+        button{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<canvas id="myCanvas"></canvas>
+<button class="play">播放</button>
+<button>暂停</button>
+<script type="text/javascript">
+        var canvas=document.getElementById("myCanvas");
+
+        canvas.width=800;
+        canvas.height=400;
+        var context=canvas.getContext("2d");
+        context.fillStyle="black";
+        context.fillRect(0,0,canvas.width,canvas.height);
+
+            // for(var i=0;i<200;i++){
+            //     var x=Math.random()*canvas.width;
+            //     var y=Math.random()*canvas.height;
+            //     drawStar(context,x,y);
+            // }
+    function drawStar(cxt,x,y){
+        cxt.beginPath();
+        for(var i=0;i<5;i++){
+            cxt.lineTo(Math.cos((18+i*72)/180*Math.PI)*15+x,
+
+                -Math.sin((18+i*72)/180*Math.PI)*15+y);
+
+            cxt.lineTo(Math.cos((54+i*72)/180*Math.PI)*5+x,
+
+                -Math.sin((54+i*72)/180*Math.PI)*5+y);
+
+        }
+        cxt.closePath();
+        cxt.fillStyle="#fb3";
+        cxt.strokeStyle="#fd5";
+        cxt.lineWidth=2;
+        // cxt.lineJoin="round";
+        cxt.fill();
+        cxt.stroke();
+
+    }
+    var oBtn1 = document.getElementsByTagName('button')[0];
+    var oBtn2 = document.getElementsByTagName('button')[1];
+    var timer = '';
+    oBtn1.onclick = function () {
+        if(oBtn1.className == 'play'){
+            oBtn1.className = '';
+            oBtn2.className = 'play';
+        }
+
+        timer = setInterval(function () {
+            var x=Math.random()*canvas.width;
+            var y=Math.random()*canvas.height;
+            drawStar(context,x,y);
+        },100)
+    };
+    oBtn2.onclick = function () {
+        if(oBtn2.className == 'play'){
+            oBtn2.className = '';
+            oBtn1.className = 'play';
+        }
+        clearInterval(timer);
+    };
+</script>
+</body>
+</html>
